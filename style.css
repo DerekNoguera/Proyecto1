@@ -58,3 +58,53 @@
     width: 90px;
     height: 90px;
 }
+circle {
+    fill: none;
+    /*esa etiqueta fill es el relleno que le quiero dar a mi circle, en este caso no va a tener por eso esta en none*/
+    stroke: #aaa;
+    /* el stroke es el border de el circulo*/
+
+    stroke-width: 16px;
+    /*el stroke width es el tamaño de el border que quiero que tenga mi circle pero el circulo va a quedar mal
+    entonces tengo que rebajarle ese 16px al radio*2 que tengo de circulo, en este caso mi radio es 40 *2 serian 80, le restamos 16
+    serian 64 y ese 64 la mitad va ser 32, por lo tanto mi radio de circulo ahora va a ser 32 no 40*/
+
+    stroke-dasharray: 100 100;
+
+    transform: rotate(-90deg);
+    /*se usa el rotate (-90) porque el desharray empieza a contar desde la posicion 90grados de el
+    circulo, pero sigue mal porque el punto de registro de el circulo no es el centro.*/
+
+    transform-origin: 50%;
+    /*el transform-origin lo que va a hacer es que el punto de registro de la rotacion va a ser
+    50% en el eje X y eje Y*/
+}
+
+circle:nth-child(2) {
+    /*nth-child(2) lo que haces es decir el circulo que voy a modificar, en este caso seria el circulo 2*/
+
+    stroke-dasharray: 0 100;
+    /*dasharray va a emepezar desde 0 hasta 100 porque estoy usando keyframes y la variable la puse en las keyframes, 
+    la variable seria la siguiente "stroke-dasharray: var(--porcentaje) 100;" pero ahora empieza desde 0 porque tiene que
+    empezar desde 0 para que la aminación se ejectute en las @keyframes*/
+    /*la variable --porcentaje lo que va hacer es modificar el primer valor y se declara como 
+    "var(porcentaje)"*/
+    /*si mi pathlength vale 100 entonces va a ser 25% de 100*/
+    /*va a haber un patron que controla la linea y los saltos, el primer valor es el tamaño de la linea y el segundo
+    es el espacio que hay entre esa linea y la proxima*/
+    /*puedo hacer que los valores de el desharray esten valorizados con el valor de el circulo, el valor sera desde que arranca el circulo
+    hastra que termina*/
+
+    stroke: grey;
+    /*este stroke va a ser el color de la barra de porcentaje*/
+    animation: rellenar .35s linear forwards;
+    /*nombre que le voy a dar a las @keyframes en este caso seria "rellenar", la duracion que seria .35segundos
+    que sea linear y que el forwards si no lo pongo la animacion se va a reiniciar, el fordwars es para que la animacion
+    de @keyframes se quede en el ultimo fotograma*/
+     }
+@keyframes rellenar{
+    to{
+        stroke-dasharray: var(--porcentaje) 100;
+    }
+    /*la keyframes llamda rellenar va a empezar desde */
+}
