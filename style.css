@@ -204,16 +204,22 @@ circle:nth-child(2) {
 
 .text1{
     border-radius: 10px;
+    margin-top: 4px;
 }
 .boton1{
     height: 20px;
     width: 60px;
     border-radius: 10px;
     margin-left: 8px;
+    margin-top: 4px;
 }
 .flex1{
     display: flex;
     flex-direction: row;
     margin-left: -20px;
     padding-bottom: 2px;
+}
+.ultimo-footer{
+    height: 20px;
+    width: 100%;
 }
