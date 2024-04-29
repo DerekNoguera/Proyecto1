@@ -53,3 +53,8 @@
     margin-top: 40px;
     margin-left: 40px;
 }
+.tamaño-svg{
+    /*damos el tamaño de el svg y que concuerde con el tamaño de el circulo*/
+    width: 90px;
+    height: 90px;
+}
