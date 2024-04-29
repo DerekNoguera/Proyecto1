@@ -48,3 +48,8 @@
     display: flex;
     gap: 5px;
 }
+/*-------Skill----------*/
+.skill{
+    margin-top: 40px;
+    margin-left: 40px;
+}
