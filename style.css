@@ -102,3 +102,9 @@ circle:nth-child(2) {
     que sea linear y que el forwards si no lo pongo la animacion se va a reiniciar, el fordwars es para que la animacion
     de @keyframes se quede en el ultimo fotograma*/
      }
+@keyframes rellenar{
+    to{
+        stroke-dasharray: var(--porcentaje) 100;
+    }
+    /*la keyframes llamda rellenar va a empezar desde */
+}
