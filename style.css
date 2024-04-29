@@ -182,6 +182,11 @@ circle:nth-child(2) {
 }
 .h3-footer{
     font-size: 15px;
+    margin-top: 20px;
+}
+.h3-footer1{
+    font-size: 15px;
+    margin-top: 30px;
 }
 .listas-footer{
     margin-left: -10px;
@@ -205,6 +210,7 @@ circle:nth-child(2) {
 .text1{
     border-radius: 10px;
     margin-top: 4px;
+    text-align: center;
 }
 .boton1{
     height: 20px;
@@ -213,13 +219,24 @@ circle:nth-child(2) {
     margin-left: 8px;
     margin-top: 4px;
 }
+.boton1:hover{
+    background-color: lightskyblue;
+}
 .flex1{
     display: flex;
-    flex-direction: row;
-    margin-left: -20px;
+    flex-direction:row;
+    margin-left: 100px;
     padding-bottom: 2px;
 }
 .ultimo-footer{
     height: 20px;
     width: 100%;
 }
+.flex-mayor-inputs{
+    display: flex;
+    flex-direction: row;
+    margin-left: 300px;
+    margin-top: -70px;
+}
+
+
