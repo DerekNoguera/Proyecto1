@@ -41,10 +41,20 @@
                     <div class="span-porcentaje" style="--porcentaje:95">
                         <!--Los SVG se usan para hacer graificos vectoriales con su etiqueta circle, se les da cy y cx que son eje Y
                         y eje X los cuales hace que el centro de circulo comience en esos ejes-->
-
                         <svg class="tamaño-svg">
-                            <circle r="40" cx="50%" cy="50%"></circle>
+                            <!--1 Circle es la etiqueta predetermina de svg para hacer circulos-->
+                            <!--2 Hay que darle un atributo de radio para saber cuanto radio va a tener
+                        el circulo el cual va a medir 40-->
+                            <!--3 El circulo comienda desde el eje 0,0 de svg entonces hay que darle 2 atributos que son
+                        "c" de center y el eje "x o y" lo cual seria "cx=" y "cy="-->
+                            <!--4 el atrubuto de cx y cy es mejor dale el 50% para que empiece como centro abtoluto de el
+                        eje Y y eje X-->
+                            <!--Voy a utilizar el atrubo pathlength para darle el valor desde que arranta el circulo hasta el
+                        valor en el que termina-->
+                            <circle class="circle" r="32" cx="50%" cy="50%" pathlength="100"></circle>
+                            <circle class="circle2" r="32" cx="50%" cy="50%" pathlength="100"></circle>
                         </svg>
+                        <span>95%</span>
                     </div>
 
 
