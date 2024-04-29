@@ -14,3 +14,37 @@
     margin-left: 40px;
     margin: 40px;
 } 
+.nombre {
+    display: flex;
+    justify-content: center;
+    font-size: 55px;
+}
+
+.recepcionista {
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    margin-top: -30px;
+}
+.tamaño-img{
+    width: 20px;
+    height: 20px;
+}
+.txt-decoration {
+    text-decoration: none;
+    margin-top: -20px;
+    margin-top: 2px;
+    color: black;
+}
+.flex-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3em;
+    padding-top: 10px;
+}
+
+.flex-img-interno {
+    display: flex;
+    gap: 5px;
+}
