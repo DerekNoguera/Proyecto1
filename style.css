@@ -1,0 +1,16 @@
+.container-grey{
+    background-color: lightgray;
+    height:1220px ;
+    width: 830px; 
+    border-radius: 1px solid black;
+    margin-left: 21%;
+}
+.container-border{
+    display: inline-block;
+    border: solid black 1px;
+    height: 94%;
+    width: 90%;
+    background-color: white;
+    margin-left: 40px;
+    margin: 40px;
+}
