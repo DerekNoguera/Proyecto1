@@ -142,3 +142,27 @@ circle:nth-child(2) {
     margin-top: -15px;
     margin-left: -8px;
 }
+.secction-orden {
+    display: grid;
+    grid-template-columns: 410px auto;
+    padding-top: 5px;
+}
+.txt-experiencie {
+    margin-left: 38px;
+}
+
+.txt-licoreria {
+    margin-left: 40px;
+    font-size: 15px;
+}
+
+.listas {
+    margin-left: 20px;
+}
+
+.img-trabajador {
+    width: 280px;
+    height: 355px;
+    margin-left: 33px;
+    margin-top: 40px;
+}
