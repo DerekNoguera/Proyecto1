@@ -238,5 +238,12 @@ circle:nth-child(2) {
     margin-left: 300px;
     margin-top: -70px;
 }
+.flex-mayor-inputs2{
+    display: flex;
+    flex-direction: row;
+    margin-left: 400px;
+    margin-top: -280px; 
+    gap: 90px;
+}
 
 
