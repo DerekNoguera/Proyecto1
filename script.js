@@ -25,4 +25,27 @@ boton2.addEventListener("click", function () {
         div2.appendChild(school2)
     }
 })
-
+let inputxt3= document.getElementById("textschool3")
+let boton3 = document.getElementById("botonschool3")
+let div3 = document.getElementById("lista1")
+boton3.addEventListener("click", function () {
+    if (inputxt3.value === "") {
+        alert("No puedes dejar el campo en blanco")
+    } else {
+        let school3 = document.createElement("li")
+        school3.innerHTML = inputxt3.value;
+        div3.appendChild(school3)
+    }
+})
+let inputxt4= document.getElementById("textschool4")
+let boton4 = document.getElementById("botonschool4")
+let div4 = document.getElementById("lista2")
+boton4.addEventListener("click", function () {
+    if (inputxt4.value === "") {
+        alert("No puedes dejar el campo en blanco")
+    } else {
+        let school4 = document.createElement("li")
+        school4.innerHTML = inputxt4.value;
+        div4.appendChild(school4)
+    }
+})
